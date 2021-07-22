@@ -79,7 +79,11 @@
 ## Create a namespace
     kubectl create -f custom-namespace.yaml
 ### OR
-    kubectl create namespace custom-namespace
+    kubectl create namespace custom-namespace'
+    
+ ## Set a namespace
+ 
+    kubectl config set-context --current --namespace=<insert-namespace-name-here>
 
 ## Create a resource specific to a namespace
     kubectl create -f kubia-manual.yaml -n custom-namespace
